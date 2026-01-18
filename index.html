@@ -17,6 +17,56 @@
     display: block;
     margin: 0 auto 20px;   /* centers the picture and adds bottom space */
 }
+.services .card i {
+    font-size: 2em;                     /* icon size */
+    margin-bottom: 10px;                /* space below icon */
+    
+    /* Gradient color trick */
+    background: linear-gradient(45deg, #FFD700, #FF8C00); /* yellow to orange */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    display: inline-block;
+}
+.services .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;          /* skill text stays white */
+    background: #111;     /* dark card background */
+}
+
+.skills .card i {
+    font-size: 2em;                     /* icon size */
+    margin-bottom: 10px;                /* space below icon */
+    
+    /* Gradient color trick */
+    background: linear-gradient(45deg, #FFD700, #FF8C00); /* yellow to orange */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    display: inline-block;
+}
+.skills .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;          /* skill text stays white */
+    background: #111;     /* dark card background */
+}
+.services .card i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    
+    /* Gradient color */
+    background: linear-gradient(45deg, #FFD700, #FF8C00); /* yellow to orange */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    display: inline-block;
+}
 
 /* ===== DRIVING CAR ANIMATION ===== */
 
@@ -248,22 +298,27 @@ src="https://res.cloudinary.com/ddzwygjym/image/upload/v1768599391/mechanical-en
 <section>
     <h2 id="servicesTitle">Services</h2>
     <div class="services">
-        <div class="card">
-            <h3>3D CAD Modeling</h3>
-            <p>Accurate part and assembly modeling ready for manufacturing.</p>
-        </div>
-        <div class="card">
-            <h3>2D Manufacturing Drawings</h3>
-            <p>GD&T based drawings following ISO / DIN standards.</p>
-        </div>
-        <div class="card">
-            <h3>Design Optimization</h3>
-            <p>Cost reduction and manufacturability improvements.</p>
-        </div>
-        <div class="card">
-            <h3>Automotive Component Design</h3>
-            <p>Experience with OEM supplier requirements.</p>
-        </div>
+    <div class="card">
+        <i class="fas fa-cube fa-2x"></i>
+        <h3>3D CAD Modeling</h3>
+        <p>Accurate part and assembly modeling ready for manufacturing.</p>
+    </div>
+    <div class="card">
+        <i class="fas fa-pencil-ruler fa-2x"></i>
+        <h3>2D Manufacturing Drawings</h3>
+        <p>GD&T based drawings following ISO / DIN standards.</p>
+    </div>
+    <div class="card">
+        <i class="fas fa-chart-line fa-2x"></i>
+        <h3>Design Optimization</h3>
+        <p>Cost reduction and manufacturability improvements.</p>
+    </div>
+    <div class="card">
+        <i class="fas fa-car fa-2x"></i>
+        <h3>Automotive Component Design</h3>
+        <p>Experience with OEM supplier requirements.</p>
+    </div>
+
     </div>
 </section>
 
@@ -351,6 +406,7 @@ function toggleLanguage() {
 
 </body>
 </html>
+
 
 
 
