@@ -155,6 +155,7 @@ header .btn {
     margin: 0 auto;          /* centers the block on page */
     line-height: 1.8;        /* increases space between lines */
     font-size: 17px;         /* adjust font size */
+    font-weight: bold;       /* Description will be bold*/
 }
 
 /* SECTIONS */
@@ -162,11 +163,12 @@ h2 { text-align: center; color: #ff9800; margin-bottom: 40px; }
 .about, .contact { text-align: center; font-size: 17px; line-height: 1.8; }
 .skills, .services, .portfolio { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
 .card {
-    background: #787276; /* Darck Grey Colour*/
+    background:   #787276;  /* very dark gray card */
     padding: 25px;
     border-radius: 14px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.5);
     text-align: center;
+    color: #FFFFFF;        /* text inside card white */
 }
 .card img { width: 100%; border-radius: 12px; margin-bottom: 15px; }
 
@@ -347,6 +349,7 @@ function toggleLanguage() {
 
 </body>
 </html>
+
 
 
 
