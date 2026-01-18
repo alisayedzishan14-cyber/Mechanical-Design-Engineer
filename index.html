@@ -6,6 +6,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+    /*===ProfilePic===*/
+.profile-pic {
+    width: 150px;          /* size of the circle */
+    height: 150px;         /* same as width for perfect circle */
+    border-radius: 50%;    /* makes it circular */
+    object-fit: cover;     /* keeps aspect ratio without stretching */
+    border: 3px solid #ff9800; /* optional: colored border */
+    display: block;
+    margin: 0 auto 20px;   /* centers the picture and adds bottom space */
+}
+
 /* ===== DRIVING CAR ANIMATION ===== */
 
 .car-container {
@@ -178,6 +189,8 @@ src="https://res.cloudinary.com/ddzwygjym/image/upload/v1768599391/mechanical-en
 
 <header>
     <button class="lang-btn" onclick="toggleLanguage()">EN / DE</button>
+    <!-- Profile pic -->
+    <img src="https://res.cloudinary.com/ddzwygjym/image/upload/v1768761022/Dp_1_k6efpp.jpg" alt="Profile Picture" class="profile-pic">
     <h1 id="title">Sayed Zishan Ali</h1>
     <p id="subtitle">CAD Specialist | Mechanical Design Engineer</p>
     <a href="#contact" class="btn" id="contactBtn">Contact Me</a>
@@ -323,6 +336,7 @@ function toggleLanguage() {
 
 </body>
 </html>
+
 
 
 
