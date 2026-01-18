@@ -8,14 +8,29 @@
 
 <style>
     /*===ProfilePic===*/
+/* Profile Pic Rotation */
 .profile-pic {
-    width: 150px;          /* size of the circle */
-    height: 150px;         /* same as width for perfect circle */
-    border-radius: 50%;    /* makes it circular */
-    object-fit: cover;     /* keeps aspect ratio without stretching */
-    border: 3px solid #ff9800; /* optional: colored border */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff9800;
     display: block;
-    margin: 0 auto 20px;   /* centers the picture and adds bottom space */
+    margin: 0 auto 20px;
+
+    /* 3D rotation */
+    transform-style: preserve-3d;
+    animation: rotateY360 15s linear infinite; /* rotate infinitely */
+}
+
+/* Keyframes for Y-axis rotation */
+@keyframes rotateY360 {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
 }
 .services .card i {
     font-size: 2em;                     /* icon size */
@@ -406,6 +421,7 @@ function toggleLanguage() {
 
 </body>
 </html>
+
 
 
 
