@@ -401,27 +401,82 @@ window.addEventListener("scroll", function() {
 let isEnglish = true;
 
 function toggleLanguage() {
-    if(isEnglish) {
-        document.getElementById("subtitle").innerText = "CAD-Spezialist | Maschinenbau-Ingenieur";
-        document.getElementById("aboutTitle").innerText = "Über mich";
-        document.getElementById("aboutText1").innerText = " Ich bin Maschinenbauingenieur und CAD-Spezialist mit 4 Jahren internationaler Erfahrung in der Entwicklung mechanischer Komponenten und Produkte. Mein Schwerpunkt liegt in der Umsetzung technischer Konzepte in präzise, fertigungsgerechte 3D-Modelle und technische Zeichnungen gemäß ISO/DIN-Normen.";
-        document.getElementById("aboutText2").innerText = " Meine Fachkenntnisse umfassen GD&T, Toleranzanalyse, fertigungsgerechte Konstruktion (DFM) sowie strukturierte Stücklistenerstellung. Ich arbeite sicher mit CATIA V5, SolidWorks, AutoCAD und Autodesk Inventor und verfüge über Erfahrung in der FEA-Simulation mit ANSYS."
-        document.getElementById("aboutText3").innerText = " Ich habe an Projekten aus verschiedenen technischen Bereichen mitgewirkt und eng mit interdisziplinären Teams, Lieferanten und der Produktion zusammengearbeitet, um zuverlässige und wirtschaftliche Lösungen zu realisieren. Meine Arbeitsweise ist geprägt von technischer Präzision, analytischem Denken und einem starken Fokus auf Funktionalität und Herstellbarkeit.Derzeit lebe ich in Deutschland und bin offen für Positionen in der mechanischen Konstruktion, Produktentwicklung, Automatisierung und im Präzisionsmaschinenbau."
-        document.getElementById("skillsTitle").innerText = "CAD-Fähigkeiten";
-        document.getElementById("servicesTitle").innerText = "Dienstleistungen";
-        document.getElementById("portfolioTitle").innerText = "Portfolio";
-        document.getElementById("contactTitle").innerText = "Kontakt";
-        document.getElementById("contactBtn").innerText = "Kontaktieren";
-        document.getElementById("cvBtn").innerText = "CV Herunterladen";
+
+    if (isEnglish) {
+
+        // ===== GERMAN VERSION =====
+        document.getElementById("subtitle").innerText =
+        "CAD-Spezialist | Maschinenbau-Ingenieur";
+
+        document.getElementById("aboutTitle").innerText =
+        "Über mich";
+
+        document.getElementById("aboutText1").innerText =
+        "Ich bin Maschinenbauingenieur und CAD-Spezialist mit 4 Jahren internationaler Erfahrung in der Entwicklung mechanischer Komponenten und Produkte. Mein Schwerpunkt liegt in der Umsetzung technischer Konzepte in präzise, fertigungsgerechte 3D-Modelle und technische Zeichnungen gemäß ISO/DIN-Normen.";
+
+        document.getElementById("aboutText2").innerText =
+        "Meine Fachkenntnisse umfassen GD&T, Toleranzanalyse, fertigungsgerechte Konstruktion (DFM) sowie strukturierte Stücklistenerstellung. Ich arbeite sicher mit CATIA V5, SolidWorks, AutoCAD und Autodesk Inventor und verfüge über Erfahrung in der FEA-Simulation mit ANSYS.";
+
+        document.getElementById("aboutText3").innerText =
+        "Ich habe an Projekten aus verschiedenen technischen Bereichen mitgewirkt und eng mit interdisziplinären Teams, Lieferanten und der Produktion zusammengearbeitet, um zuverlässige und wirtschaftliche Lösungen zu realisieren.";
+
+        document.getElementById("skillsTitle").innerText =
+        "CAD-Fähigkeiten";
+
+        document.getElementById("servicesTitle").innerText =
+        "Dienstleistungen";
+
+        document.getElementById("portfolioTitle").innerText =
+        "Meine Designs";
+
+        document.getElementById("contactTitle").innerText =
+        "Kontakt";
+
+        document.getElementById("contactBtn").innerText =
+        "Kontaktieren";
+
     } else {
-        location.reload(); // simple way to revert to English
+
+        // ===== ENGLISH VERSION =====
+        document.getElementById("subtitle").innerText =
+        "CAD Specialist | Mechanical Design Engineer";
+
+        document.getElementById("aboutTitle").innerText =
+        "About Me";
+
+        document.getElementById("aboutText1").innerText =
+        "I am a Mechanical Design Engineer and CAD Specialist with 4 years of international experience in mechanical component and product development.";
+
+        document.getElementById("aboutText2").innerText =
+        "My expertise includes GD&T, tolerance analysis, design-for-manufacturing and structured bills of materials using CATIA V5, SolidWorks, AutoCAD and Inventor.";
+
+        document.getElementById("aboutText3").innerText =
+        "I collaborate with interdisciplinary teams and suppliers to deliver reliable and cost-efficient mechanical solutions.";
+
+        document.getElementById("skillsTitle").innerText =
+        "CAD Skills";
+
+        document.getElementById("servicesTitle").innerText =
+        "Services";
+
+        document.getElementById("portfolioTitle").innerText =
+        "My Designs";
+
+        document.getElementById("contactTitle").innerText =
+        "Contact";
+
+        document.getElementById("contactBtn").innerText =
+        "Contact Me";
     }
+
     isEnglish = !isEnglish;
 }
+
 </script>
 
 </body>
 </html>
+
 
 
 
