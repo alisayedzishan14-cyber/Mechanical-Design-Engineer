@@ -32,6 +32,22 @@
         transform: rotateY(360deg);
     }
 }
+    .gradient-text {
+  background: linear-gradient(
+      90deg,
+      #ffd000 0%,
+      #ff8c00 50%,
+      #ff5e00 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+.gradient-text:hover {
+  text-shadow: 0 0 8px rgba(255,140,0,0.6);
+  transition: 0.3s ease;
+}
+
 .services .card i {
     font-size: 2em;                     /* icon size */
     margin-bottom: 10px;                /* space below icon */
@@ -234,7 +250,7 @@ h2 { text-align: center; color: #ff9800; margin-bottom: 40px; }
     border-radius: 14px;
     box-shadow: 0 6px 15px rgba(0,0,0,0.5);
     text-align: center;
-    color:  linear-gradient(45deg, #FFD700, #FF8C00); /* yellow to orange */   /* text inside card */
+    color: #FFFFF;   /* text inside card */
 }
 .card img { width: 100%; border-radius: 12px; margin-bottom: 15px; }
 
@@ -344,6 +360,7 @@ src="https://res.cloudinary.com/ddzwygjym/image/upload/v1768599391/mechanical-en
         <div class="card">
             <img src="https://res.cloudinary.com/ddzwygjym/image/upload/v1768587487/Engine_block_CAD-style_o9pfkh.jpg" alt="Engine Block">
             <h3>Engine Block</h3>
+            <p class="gradient-text">Mechanical Component Design</p>
             <p>Four-cylinder engine block modeled for manufacturability and thermal efficiency</p>
         </div>
         <div class="card">
@@ -476,6 +493,7 @@ function toggleLanguage() {
 
 </body>
 </html>
+
 
 
 
